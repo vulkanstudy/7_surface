@@ -389,7 +389,7 @@ private:
 
 		// キューの取得
 		vkGetDeviceQueue(device, indices.graphicsFamily.value(), 0, &graphicsQueue);
-		vkGetDeviceQueue(device, indices.presentFamily.value(), 0, &presentQueue);
+		vkGetDeviceQueue(device, indices.presentFamily.value(), 0, &presentQueue);//★追加
 
 		return device;
 	}
